@@ -1,8 +1,16 @@
 package main
 
 import (
-	"fmt"
+	"fmt",
+	"time"
 )
+
+type user struct {
+	firstName string,
+	lastName string,
+	birthdate string,
+	createdAt time.Time
+}
 
 func main() {
 	firstName := getUserData("Please enter your first name: ")
@@ -13,6 +21,8 @@ func main() {
 
 	fmt.Println(firstName, lastName, birthdate)
 }
+
+func output
 
 func getUserData(promptText string) string {
 	fmt.Print(promptText).  
